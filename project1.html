@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistem Deteksi Depresi PHQ-9 | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf7f0;
+      color: #4b3f39;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .btn {
+      background-color: #d4a373;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #6b4c3b;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
+
+    section h2 {
+      color: #8d6e63;
+      margin-bottom: 1rem;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #6b4c3b;
+    }
+  </style>
+</head>
+<body>
+  <a href="portfolio.html" class="btn">← Back to Home</a>
+
+  <header class="hero">
+    <h1>Sistem Deteksi Depresi PHQ-9</h1>
+  </header>
+
+  <section>
+    <h2>Deskripsi Proyek</h2>
+    <p>
+      Proyek ini merupakan sistem prediksi tingkat depresi pada mahasiswa menggunakan pendekatan machine learning berdasarkan kuesioner PHQ-9 
+      (Patient Health Questionnaire-9) serta beberapa faktor tambahan seperti aspek akademik, sosial, dan gaya hidup dan lainnya. dataset nya diperoleh dari repository online publik
+    </p>
+    <p>
+      Data yang dikumpulkan diproses melalui tahapan pembersihan data, seleksi fitur, dan pelatihan menggunakan algoritma <strong>Machine Learning.</strong> 
+      Model terbaik kemudian diterapkan pada sistem berbasis web menggunakan <strong>Flask</strong> dan <strong> React js </strong> antarmuka pengguna yang sederhana dan intuitif.
+    </p>
+    <p>
+      Sistem ini dilengkapi fitur login, form isian kuisioner PHQ-9, chatbot sederhana, dan hasil klasifikasi yang memberikan informasi 
+      mengenai tingkat risiko depresi pengguna. Tujuan dari proyek ini adalah menjadi alat bantu deteksi dini yang mudah diakses 
+      dan mendorong kesadaran tentang kesehatan mental di kalangan mahasiswa.
+    </p>
+  </section>
+
+  <section>
+    <img src="images/login.png" alt="Login Page" class="project-image" />
+    <p class="caption">Halaman login sistem</p>
+  </section>
+
+  <section>
+    <img src="images/phq.png" alt="Beranda" class="project-image" />
+    <p class="caption">Halaman beranda utama</p>
+  </section>
+
+  <section>
+    <img src="images/about.png" alt="Tentang Sistem" class="project-image" />
+    <p class="caption">Halaman tentang sistem dan penjelasan fungsionalitas</p>
+  </section>
+
+  <section>
+    <img src="images/test.png" alt="Form Tes PHQ-9" class="project-image" />
+    <p class="caption">Form pengisian kuisioner PHQ-9 oleh pengguna</p>
+  </section>
+
+  <section>
+    <img src="images/result.png" alt="Hasil Prediksi" class="project-image" />
+    <p class="caption">Halaman hasil prediksi risiko depresi</p>
+  </section>
+
+  <section>
+    <img src="images/chatbot.png" alt="Chatbot Sistem" class="project-image" />
+    <p class="caption">Fitur chatbot sebagai pendamping pengguna</p>
+  </section>
+</body>
+</html>
