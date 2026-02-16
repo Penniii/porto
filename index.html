@@ -3,146 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Penni Wintasari Simarmata | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>Penni Wintasari Simarmata | UI/UX Portfolio</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="hero glass">
+
+  <!-- NAVBAR -->
+  <nav class="nav glass">
+    <div class="nav-container">
+      <div class="logo">PW.</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="toggleMode" class="btn toggle-mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero section">
     <img src="images/profil.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Penni Wintasari Simarmata</h1>
-    <p>Web Developer | UI Designer | Copy Writer</p>
+    <p>Product Designer • UI Designer • Copy Writer</p>
+    <a href="CV-Penni.pdf" class="btn hero-btn" download>Download CV</a>
   </header>
 
-  <nav class="nav">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <button id="toggleMode" class="btn toggle-mode">🌙</button>
-
-  </nav>
-  
-
+  <!-- ABOUT -->
   <section id="about" class="section">
-    <center><h2>About Me</h2></center>
+    <h2>About Me</h2>
     <p>
-      I am a frontend developer with a passion for creating clean and beautiful user experiences. I love building responsive, accessible websites that make people happy.
+      Fresh graduate with a passion for UI/UX Design. 
+      I focus on creating user-centered digital experiences 
+      that are functional and visually engaging. 
+      Always enthusiastic about learning and continuously growing as a designer.
     </p>
-    <div class="center" style="margin-top: 1.5rem;">
-      <a href="cv_penni.pdf" class="btn" download>📄 Download CV</a>
-    </div>
   </section>
 
+  <!-- GET IN TOUCH -->
+<section id="getintouch" class="section">
+  <h2>Get In Touch</h2>
 
-  <section id="projects" class="section">
-    <center><h2>Featured Projects</h2></center>
-    <div class="projects-grid" id="project-container">
-      <a href="project1.html" class="project-card glass">
-        <img src="images/phq.png" alt="Sistem Prediksi Depresi" />
-        <h3>Sistem Prediksi Depresi PHQ-9</h3>
-      </a>
-      <a href="project2.html" class="project-card glass">
-        <img src="images/dinogame.png" alt="Game Dino Sederhana" />
-        <h3>Game Dino Sederhana</h3>
-      </a>
-      <a href="project3.html" class="project-card glass">
-        <img src="images/pomodoro.png" alt="Pomodoro Timer" />
-        <h3>Pomodoro Timer Estetik</h3>
-      </a>
-      <a href="project4.html" class="project-card hidden">
-        <img src="images/artikel2.png" alt="Artikel Blog" />
-        <h3>Artikel Blog</h3>
-      </a>
-      <a href="project5.html" class="project-card hidden">
-        <img src="images/setyautamagroup.png" alt="Web Company Profile" />
-        <h3>Web Company Profile</h3>
-      </a>
-    </div>
-    <div class="center">
-      <button class="btn" id="showAllBtn">See All Projects</button>
-    </div>
-  </section>
+  <div class="contact-grid">
 
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/penwts?igsh=bzg2OGxsdHJsN2x2" target="_blank" class="contact-card glass">
+      <img src="images/instagram.png" alt="Instagram">
+      <p>Instagram</p>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:penniwitasari1122@gmail.com" class="contact-card glass">
+      <img src="images/communication.png" alt="Email">
+      <p>Email</p>
+    </a>
+
+    <!-- Dribbble -->
+    <a href="https://dribbble.com/Penni-Wintasari" target="_blank" class="contact-card glass">
+      <img src="images/dribbble.png" alt="Dribbble">
+      <p>Dribbble</p>
+    </a>
+
+    <!-- Linkedin -->
+    <a href="https://www.linkedin.com/in/penni-wintasari" target="_blank" class="contact-card glass">
+      <img src="images/linkedin (1).png" alt="Linkedin">
+      <p>Linkedin</p>
+    </a>
+
+  </div>
+</section>
+
+
+  <<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Featured Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="projects-grid">
+
+  <!-- NEW UI/UX PROJECT (PALING ATAS) -->
+  <a href="project-uiux.html" class="project-card glass">
+    <img src="images/Wireframe - 1 (2).png" alt="UI/UX Design Project">
+    <h3>UI/UX Mobile App Design</h3>
+  </a>
+
+  <!-- PHQ-9 -->
+  <a href="project1.html" class="project-card glass">
+    <img src="images/phq.png" alt="">
+    <h3>Sistem Prediksi Depresi PHQ-9</h3>
+  </a>
+
+  <!-- Pomodoro -->
+  <a href="project3.html" class="project-card glass">
+    <img src="images/pomodoro.png" alt="">
+    <h3>Pomodoro Timer Estetik</h3>
+  </a>
+
+  <!-- Hidden -->
+  <a href="project4.html" class="project-card glass hidden">
+    <img src="images/artikel2.png" alt="">
+    <h3>Artikel Blog</h3>
+  </a>
+
+  <a href="project5.html" class="project-card glass hidden">
+    <img src="images/setyautamagroup.png" alt="">
+    <h3>Web Company Profile</h3>
+  </a>
+
+</div>
+
+
+  </div>
+
+  <div class="center">
+    <button id="toggleProjectsBtn" class="btn">See All Projects</button>
+  </div>
+</section>
+
+
+  <!-- Skill -->
   <section id="skills" class="section">
-    <center><h2>familiar with</h2></center>
-    <div class="skills-grid">
-      <div class="skill-card glass">
-        <img src="images/html.png" alt="HTML" />
-        <p>HTML</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/css.png" alt="CSS" />
-        <p>CSS</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/js.png" alt="JavaScript" />
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/react.png" alt="React" />
-        <p>React</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/python.png" alt="Python" />
-        <p>Python</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/figma.png" alt="Figma" />
-        <p>Figma</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/canva.png" alt="Canva" />
-        <p>Canva</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/wordpress.png" alt="Wordpress" />
-        <p>Wordpress</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/php.png" alt="php" />
-        <p>PHP</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/laravel.png" alt="Laravel" />
-        <p>Laravel</p>
-      </div>
-      <div class="skill-card glass">
-        <img src="images/office.png" alt="Microsoft Office" />
-        <p>Microsoft Office</p>
-      </div>
-    </div>
-  </section>
+    <h2></h2>
 
+    <section id="skills" class="section">
+  <h2>Familiar With</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card glass">
+      <img src="images/html.png" alt="HTML">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/css.png" alt="CSS">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/js.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/react.png" alt="React">
+      <p>React</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/python.png" alt="Python">
+      <p>Python</p>
+    </div>
+
+  </div>
+
+  <!-- TOOLS -->
+  <h2 style="margin-top: 4rem;">Tools</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card glass">
+      <img src="images/figma.png" alt="Figma">
+      <p>Figma</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/canva.png" alt="Canva">
+      <p>Canva</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/wordpress.png" alt="WordPress">
+      <p>WordPress</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/office.png" alt="Microsoft Office">
+      <p>Microsoft Office</p>
+    </div>
+
+    <div class="skill-card glass">
+      <img src="images/github (1).png" alt="GitHub">
+      <p>GitHub</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
   <section id="contact" class="section">
-    <center><h2>Contact</h2></center>
+    <h2>Let's Connect</h2>
     <p>Email: <a href="mailto:penniwitasari1122@gmail.com">penniwitasari1122@gmail.com</a></p>
   </section>
 
-  <footer class="footer glass">
-    <p>&copy; 2025 Penni W.S💖. All rights reserved.</p>
-    <div class="social-links">
-    <a href="https://www.linkedin.com/in/penni-witasari-a43706227" target="_blank"><img src="images/linkedin (1).png" alt="LinkedIn" width="24" height="24"></a>
-    <a href="https://github.com/Penniii" target="_blank"><img src="images/github (1).png" alt="GitHub" width="24" height="24"></a> 
-    <a href="https://www.instagram.com/penwts?igsh=bzg2OGxsdHJsN2x2" target="_blank"><img src="images/social.png" alt="Instagram" width="24" height="24"></a>
-  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Penni W.S • Crafted with 💖</p>
   </footer>
 
+  <!-- SCRIPT -->
   <script>
-  document.getElementById('showAllBtn').addEventListener('click', function() {
-    const hiddenProjects = document.querySelectorAll('.project-card.hidden');
-    hiddenProjects.forEach(card => card.classList.remove('hidden'));
-    this.style.display = 'none';
-  });
+document.addEventListener("DOMContentLoaded", function () {
 
-  // Toggle light/dark mode
-  const toggleBtn = document.getElementById('toggleMode');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-  });
+  /* =========================
+     🌙 DARK MODE SYSTEM
+  ========================== */
+
+  const toggleMode = document.getElementById("toggleMode");
+
+  // Cek preferensi tersimpan
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+    toggleMode.textContent = "☀️";
+  } 
+  else if (!savedTheme) {
+    // Auto detect system preference
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.add("dark");
+      toggleMode.textContent = "☀️";
+    }
+  }
+
+  // Toggle klik
+  if (toggleMode) {
+    toggleMode.addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        toggleMode.textContent = "☀️";
+      } else {
+        localStorage.setItem("theme", "light");
+        toggleMode.textContent = "🌙";
+      }
+    });
+  }
+
+
+  /* =========================
+     📂 SEE ALL PROJECTS
+  ========================== */
+
+  const toggleProjectsBtn = document.getElementById("toggleProjectsBtn");
+  const hiddenProjects = document.querySelectorAll(".project-card.hidden");
+
+  let isExpanded = false;
+
+  if (toggleProjectsBtn) {
+    toggleProjectsBtn.addEventListener("click", function () {
+
+      isExpanded = !isExpanded;
+
+      hiddenProjects.forEach(card => {
+        card.style.display = isExpanded ? "block" : "none";
+      });
+
+      toggleProjectsBtn.textContent = isExpanded
+        ? "See Less"
+        : "See All Projects";
+    });
+  }
+
+});
 </script>
+
 
 </body>
 </html>
